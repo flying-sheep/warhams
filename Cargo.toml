@@ -1,6 +1,15 @@
 [package]
 name = 'warhams'
 version = '0.1.0'
+authors = ['Philipp A. <flying-sheep@web.de>']
+repository = 'https://github.com/flying-sheep/printpdf'
+homepage = 'https://github.com/flying-sheep/printpdf'
+license = 'GPL'
+readme = 'README.md'
+description = 'Convert BattleScribe rosters to compact PDFs'
+keywords = ['pdf']
+categories = ['graphics']
+exclude = ['./assets/*']
 edition = '2021'
 
 [dependencies]
