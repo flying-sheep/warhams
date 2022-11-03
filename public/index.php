@@ -25,8 +25,6 @@ Uncomment if there's known outages
         <p>ButtScribe is a web application that runs off of BattleScribe output, and generates printable datasheets for the units in your army. It currently supports:</p>
         <ul>
             <li><a href="/40k.php">40k 9th Edition</a> (including Crusade)</li>
-            <li><a href="/apoc.php">Apocalypse (2019)</a></li>
-            <li><a href="/kt.php">Kill Team (2018)</a></li>
         </ul>  
         <p>The goal with ButtScribe is to bridge a gap in <em>printed materials</em>: the codices have nicely-formatted unit entries, but these are intended for selecting a unit's options, so it has a raft of information that might not be relevant depending on what options you took, and they don't include the actual points/PL costs of your specific unit. That is, the codex will have all of the wargear and rules for <em>a</em> Tactical Squad, but what you really want during a game is the wargear and rules for <em>your</em> Tactical squads, which is where ButtScribe comes in.</p>
         <p>Also, BattleScribe does, obviously, support printing army lists, as anyone who has ever played 40k can tell you. ButtScribe is an attempt to improve on their layout, nothing more.</p>
@@ -64,8 +62,6 @@ Uncomment if there's known outages
     <div class="panel-body">
         <p><img src="/output.png" alt="Output data card example" width="100%"/></p>
         <p><img src="/output_crusade.png" alt="Output crusade example" width="100%"/></p>
-        <p><img src="output_kt.png" alt="Output data card example" width="50%"/><img src="output_kard.png" alt="Output data card example" width="50%"/></p>
-        <p><img src="output_apoc.png" alt="Apocalypse data card example" width="100%"/></p>
     </div>
 </div>
 
