@@ -133,7 +133,7 @@ class wh40kRenderer extends Renderer {
         $gon->readImage('../assets/octagon.png');
         $gon->resizeimage(45, 45, \Imagick::FILTER_LANCZOS, 1);
         $this->image->compositeImage($gon, Imagick::COMPOSITE_DEFAULT, $this->currentX + 105, 52);
-        $draw->setFont('../assets/title_font.otf');
+        $draw->setFont('../assets/MinionPro-Bold.otf');
         $draw->setFontSize(26);
 
         if(strlen($unit['power']) == 1) {
@@ -146,7 +146,7 @@ class wh40kRenderer extends Renderer {
         $gon->readImage('../assets/octagon.png');
         $gon->resizeimage(45, 45, \Imagick::FILTER_LANCZOS, 1);
         $this->image->compositeImage($gon, Imagick::COMPOSITE_DEFAULT, $this->currentX + 152, 52);
-        $draw->setFont('../assets/title_font.otf');
+        $draw->setFont('../assets/MinionPro-Bold.otf');
         $draw->setFontSize(20);
         if(strlen($unit['points']) == 2) {
             $this->image->annotateImage($draw, 165 + $this->currentX, 82, 0, $unit['points']);
@@ -158,7 +158,7 @@ class wh40kRenderer extends Renderer {
         $iters = 0;
         $title_size = 28;
         $draw->setFontSize($title_size);
-        $draw->setFont('../assets/title_font.otf');
+        $draw->setFont('../assets/MinionPro-Bold.otf');
         $title = $unit['customName'] ? $unit['customName'] : $unit['title'];
         $check = $this->image->queryFontMetrics($draw, strtoupper($title));
         $maxNameWidth = $this->bigBoys ? 600 : 420;

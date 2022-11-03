@@ -35,7 +35,7 @@ abstract class Renderer {
 
     public function getDraw() {
         $draw = new ImagickDraw();
-        $draw->setFont('../assets/body_font.otf');
+        $draw->setFont('../assets/MinionPro-Regular.otf');
         $draw->setStrokeColor('#000000');
         $draw->setFillColor('#000000');
         $draw->setStrokeOpacity(0);
@@ -51,7 +51,7 @@ abstract class Renderer {
         $hdraw->setFontWeight(600);
         $hdraw->setFillColor('#000000');
         $hdraw->setFillOpacity(1);
-        $hdraw->setFont('../assets/font.ttf');
+        $hdraw->setFont('../assets/RedeyeSerif-Bold.ttf');
         return $hdraw;
     }
 

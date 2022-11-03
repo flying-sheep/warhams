@@ -13,3 +13,4 @@ exclude = ['./assets/*']
 edition = '2021'
 
 [dependencies]
+printpdf = { version = '0.5.3', features = ['embedded_images'] }

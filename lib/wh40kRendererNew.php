@@ -119,7 +119,7 @@ class wh40kRendererNew extends newRenderer {
             $this->image->compositeImage($gon, Imagick::COMPOSITE_DEFAULT, $x + 8, $y + 7);
         }
 
-        $draw->setFont('../assets/title_font.otf');
+        $draw->setFont('../assets/MinionPro-Bold.otf');
 
         # points and power:
         $draw->setFontSize(30);
@@ -142,7 +142,7 @@ class wh40kRendererNew extends newRenderer {
         $title = $unit['customName'] ? $unit['customName'] : $unit['title'];
         $title_size = 32;
         $draw->setFontSize($title_size);
-        $draw->setFont('../assets/title_font.otf');
+        $draw->setFont('../assets/MinionPro-Bold.otf');
         $check = $this->image->queryFontMetrics($draw, strtoupper($title));
         $maxNameWidth = 420;
         while($iters < 6 && $check['textWidth'] > $maxNameWidth) {
