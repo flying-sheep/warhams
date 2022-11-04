@@ -18,7 +18,6 @@ ob_start();
         <div class="panel-body">
 <?php
 
-require_once('../lib/wh40kRenderer.php');
 require_once('../lib/wh40kRendererNew.php');
 require_once('../lib/wh40kROSParser.php');
 require_once('../lib/Upload.php');
