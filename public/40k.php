@@ -7,7 +7,7 @@
     <div class="panel-body">
         <p>Go into BattleScribe, and click "Save the Roster":</p>
         <p><img src="/butan.png" alt="BattleScribe Save button" width="300px"/></p>
-        <p>Then put the ROSZ/ROS file here and wait for a little bit. ButtScribe does support HTML export roster files, but you won't get the full output, as those files lack some of the necessary data. It is offered as a legacy option, but we recommend using ROS/ROSZ format for the best experience.</p>
+        <p>Then put the ROSZ/ROS file here and wait for a little bit.</p>
         <form method="post" enctype="multipart/form-data" action="/post.php">
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">

@@ -3,15 +3,6 @@
 require_once('wh40kRenderer.php');
 
 class Upload {
-
-    private static function ProcessHtml($inPath){
-        # escape these:
-        $tmp = file_get_contents($inPath);
-        $tmp = str_replace('& ', '&amp; ', $tmp);
-        file_put_contents($inPath, $tmp);
-        return $inPath;
-    }
-
     private static function ProcessRos($inPath){
         return $inPath;
     }
@@ -70,10 +61,6 @@ class Upload {
     $inPath = "/var/tmp/".$fileName;
 
     switch (strtolower($path_parts['extension'])) {
-        case 'html':
-            move_uploaded_file($input['tmp_name'], $inPath);
-            return Upload::ProcessHtml($inPath);
-
         case 'rosz':
             move_uploaded_file($input['tmp_name'], $inPath);    
             return Upload::ProcessRosz($inPath);

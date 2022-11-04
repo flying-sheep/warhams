@@ -69,8 +69,8 @@ fn add_images(current_layer: PdfLayerReference) {
     // currently, the only reliable file formats are bmp/jpeg/png
     // this is an issue of the image library, not a fault of printpdf
     let mut image_file = File::open("assets/octagon.png").unwrap();
-    // https://github.com/fschutt/printpdf/issues/119
     let mut image = Image::try_from(PngDecoder::new(&mut image_file).unwrap()).unwrap();
+    // https://github.com/fschutt/printpdf/issues/119
     image.image = remove_alpha_channel_from_image_x_object(image.image);
 
     // translate x, translate y, rotate, scale x, scale y
@@ -79,8 +79,8 @@ fn add_images(current_layer: PdfLayerReference) {
     image.add_to_layer(
         current_layer.clone(),
         ImageTransform {
-            translate_x: Some(Mm(70.)),
-            translate_y: Some(Mm(70.)),
+            translate_x: Some(Mm(100.)),
+            translate_y: Some(Mm(100.)),
             ..Default::default()
         },
     );

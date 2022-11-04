@@ -20,7 +20,6 @@ ob_start();
 
 require_once('../lib/wh40kRenderer.php');
 require_once('../lib/wh40kRendererNew.php');
-require_once('../lib/wh40kHTMLParser.php');
 require_once('../lib/wh40kROSParser.php');
 require_once('../lib/Upload.php');
 
@@ -34,10 +33,8 @@ try {
 
     if (substr(strtolower($fileToParse), -4) == '.ros'){
         $parser = new wh40kROSParser($fileToParse);
-    } elseif (substr(strtolower($fileToParse), -5) == '.html'){
-        $parser = new wh40kHTMLParser($fileToParse); 
     } else {
-        throw new Exception("File type is not accepted. Use .ros, .rosz or .html.");    
+        throw new Exception("File type is not accepted. Use .ros or .rosz.");    
     }
     
     if(!$error) {
