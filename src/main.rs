@@ -7,7 +7,7 @@ mod pdf_playground;
 mod ros_parser;
 
 use crate::pdf_playground::make_test_pdf;
-use crate::ros_parser::parse_roster;
+use crate::ros_parser::Roster;
 
 /// Simple program to greet a person
 #[derive(Parser, Debug)]
@@ -23,7 +23,7 @@ struct Args {
 
 fn main() -> Result<()> {
     let args = Args::parse();
-    let ros = parse_roster(&args.in_path).context("Could not parse roster")?;
+    let ros = Roster::from_file(&args.in_path).context("Could not parse roster")?;
     dbg!(ros);
     if args.make_pdf {
         make_test_pdf();

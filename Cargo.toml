@@ -17,3 +17,4 @@ anyhow = "1.0.66"
 clap = { version = "4.0.18", features = ["derive"] }
 printpdf = { version = '0.5.3', features = ['embedded_images'] }
 quick-xml = "0.26.0"
+zip = "0.6.3"
